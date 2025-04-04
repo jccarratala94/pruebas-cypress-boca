@@ -1,0 +1,25 @@
+<!-- src/login.html -->
+<body>
+    <form onsubmit="handleLogin(event)">
+        <input type="email" data-cy="email" placeholder="Correo" required>
+        <input type="password" data-cy="password" placeholder="Contraseña" required>
+        <button type="submit" data-cy="submit-login">Iniciar sesión</button>
+    </form>
+
+    <button onclick="goBack()" data-cy="back-button">Volver al Inicio</button>
+
+    <script>
+        function handleLogin(e) {
+            e.preventDefault(); // Evita el envío tradicional del formulario
+            
+            // Simular un "login exitoso"
+            setTimeout(() => {
+                window.location.href = "index.html"; // Redirigir después de "validar"
+            }, 1000);
+        }
+
+        function goBack() {
+            window.location.href = "index.html"; // Vuelve a la página principal
+        }
+    </script>
+</body>

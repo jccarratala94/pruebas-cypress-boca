@@ -1,0 +1,10 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar carpetas de Cypress que no queremos subir
+cypress/videos/
+cypress/screenshots/
+
+# Otros archivos innecesarios
+.DS_Store
+.env

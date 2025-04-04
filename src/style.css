@@ -1,0 +1,104 @@
+/* Fuente más moderna */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px;
+  background-color: #e3e6f3;
+  color: #333;
+}
+
+/* Header mejorado */
+header {
+  background: linear-gradient(to right, #0000FF, #0033FF);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* Tarjeta del próximo partido */
+[data-cy="next-match-card"] {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+[data-cy="next-match-card"]:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para los asientos */
+.seat {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Asiento seleccionado */
+.seat.selected {
+  background-color: #2196F3;
+  transform: scale(1.1);
+}
+
+/* Modal de pago */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* Fondo oscuro al abrir el modal */
+.modal::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Notificación de éxito */
+[data-cy="success-container"] {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: #4CAF50;
+  padding: 15px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Animación para notificación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+[data-cy="success-container"].show {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
