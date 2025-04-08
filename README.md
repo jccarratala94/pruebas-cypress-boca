@@ -1,10 +1,19 @@
 🏆 Portafolio QA - Juan Cruz
 
-
-
-
-
 Bienvenido a mi portafolio de pruebas automatizadas con Cypress. Este repositorio contiene pruebas E2E desarrolladas para validar el flujo de compra de entradas para Boca Juniors.
+
+## 📚 Contenido
+
+- [🎯 Objetivo del Proyecto](#-objetivo-del-proyecto)
+- [📥 Clonación del Repositorio](#-clonación-del-repositorio)
+- [🚀 Pruebas Realizadas](#-pruebas-realizadas)
+- [🛠️ Tecnologías Utilizadas](#️-tecnologías-utilizadas)
+- [📂 Estructura del Proyecto](#-estructura-del-proyecto)
+- [▶️ Cómo Ejecutar las Pruebas](#️-cómo-ejecutar-las-pruebas)
+- [📸 Capturas de Pantalla / Videos](#-capturas-de-pantalla--videos)
+- [📊 Resumen de Resultados - Cypress](#-resumen-de-resultados---cypress-modo-headless)
+- [🏆 Contribuciones y Contacto](#-contribuciones-y-contacto)
+
 
 ## 🎯 Objetivo del Proyecto
 
